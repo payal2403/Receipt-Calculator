@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciept calculator</title>
+   
+    <link rel="stylesheet" href="calculator1.css">
+</head>
+
+
+<body>
+    <div class="main">
+    <div class="container">
+        <!-- admin section -->
+        <div class="box">
+            <h1 align="center" class="B">Admin</h1>
+            <h3 class="m">Add a new Product</h3>
+            <input type="text" class="add" placeholder="Product Name">
+           
+            <button   onclick="addproduct()">Add Product</button>
+            <h5>Select a product then add the price per unit</h5>
+
+            <select  class="productlist">
+                <option disabled selected>Select Product</option>
+            </select>
+            <input type="text" class="price">
+            <button  onclick="addprice()">Add Price</button>
+             <p class="message"></p>
+
+        </div>
+
+        <!-- Checkout -->
+        <div class="box1">
+            <h1 align="center" class="B" >Checkout</h1>
+            <button class="cart"  onclick="check()">New Transaction</button>
+            <h5>Select a product then add the number of units</h5> <br>
+           <select class="checkoutproduct">
+            <option disabled selected>Select Product</option>
+           </select>
+           Unit: <input type="number" id="unit"> <br>
+           <button class="cart" onclick="Cart()">Add to Cart</button> <br><br>
+         <div>
+              <button class="one">1</button>
+              <button class="one">2</button>
+         </div>
+         <div>
+            <button class="one">3</button>
+            <button class="one">4</button>
+        </div>
+        <div>
+            <button class="one">5</button>
+            <button class="one">6</button>
+        </div>
+        <div>
+            <button class="one">7</button>
+            <button class="one">8</button>
+        </div>
+        <div>
+            <button class="one">9</button>
+        </div>
+        <button class="pay" onclick="pay()">Pay</button>
+        <p class="checkout-message"></p>
+        
+            
+
+
+        </div>
+        <!-- Receipt -->
+        <div class="box1">
+            <h1 align="center" class="B">Receipt</h1>
+            <p class="rec">Product &nbsp;  ₹/Unit &nbsp; Unit(s) &nbsp; price</p>    
+            <div class="receiptdata"></div>
+        
+        
+        </div>
+
+
+
+    </div>
+    </div>
+  <script src="calculator.js"></script>
+
+</body>
+
+</html>
